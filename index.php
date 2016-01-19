@@ -19,6 +19,8 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
+
+
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
     <!-- <script src="assets/js/ie-emulation-modes-warning.js"></script> -->
@@ -35,18 +37,30 @@
     <div class="container">
       <div class="header clearfix">
         <nav>
+        <!--
+          <ul class="nav nav-pills pull-right">
+            <li role="presentation" class="active"><a href="#">Servers</a></li>
+            <li role="presentation"><a href="http://giv-oct.uni-muenster.de:5000">Dataset</a></li>
+          </ul> -->
 
           <ul class="nav nav-pills pull-right" id="pills">
             <li class="active"><a role="tab" data-toggle="tab" href="#servers">Servers</a></li>
-            <li><a role="tab" data-toggle="tab" href="#resources">Resources</a></li>
+            <li id="resources-tab"><a role="tab" data-toggle="tab" href="#resources">Resources</a></li>
           </ul>
 
         </nav> 
         <h3 class="text-muted">The Open City Toolkit</h3>
       </div>
 
+      <!--
+      <div class="jumbotron">
+        <h1>Jumbotron heading</h1>
+        <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+        <p><a class="btn btn-lg btn-success" href="#" role="button">Sign up today</a></p>
+      </div> -->
+
       <?php
-        include 'php/get_url.php';
+        include 'get_url.php';
         $online = '<span style="color:green">ONLINE</span>';
         $offline = '<span style="color:red">OFFLINE</span>';
         $run = '<span style="color:green">RUNNING</span>';
@@ -145,6 +159,11 @@
           <a href="https://github.com/geo-c/Open-City-Toolkit"><i class="fa fa-github-square fa-2x"></i></a>
           <a href="https://twitter.com/geoc_eu"><i class="fa fa-twitter-square fa-2x"></i></a>
           <a href="https://www.facebook.com/geo.c.opencities"><i class="fa fa-facebook-square fa-2x"></i></a>
+          <!--<span>
+            <a href="http://giv-oct.uni-muenster.de:5000/"><i class="fa fa-square fa-2x"></i></a>
+            <a href="http://giv-oct.uni-muenster.de:5000/"><img src="http://giv-oct.uni-muenster.de/oct/images/ckan-logo-footer.png" width="22px" height="auto" style="float:right; padding-top: 5px; padding-left: 5px;"></a>
+          </span>-->
+
           <span style="position: relative; right: 0; top: 0;">
             <a href="http://giv-oct.uni-muenster.de:5000/">
               <i class="fa fa-square fa-2x" style="position: relative; top: 0; left: 0;"></i>
@@ -154,9 +173,10 @@
             </a>
           </span>
         </div>
+        <!--<img src="../oct/images/logo-geoc.png">-->
       </center></footer>
 
-    </div>
+    </div> <!-- /container -->
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <!-- <script src="assets/js/ie10-viewport-bug-workaround.js"></script> -->
@@ -170,6 +190,10 @@
     query("http://giv-oct.uni-muenster.de:5000");
   </script>
   <script>
+    if( '<?php echo $ckanOCT; ?>' == '<span style="color:red">NOT RUNNING</span>')
+      document.getElementById('resources-tab').innerHTML = '<a role="tab" style="cursor:no-drop;">Resources</a>';
+    console.log(document.getElementById('resources-tab'));
+
     $(function() {
       var hash = window.location.hash;
       // do some validation on the hash here
@@ -178,6 +202,7 @@
       //}
     });
   </script>
+
   </body>
 </html>
 
