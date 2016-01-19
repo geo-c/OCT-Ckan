@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="Samuel Navas Medrano">
     <link rel="icon" href="favicon.ico">
@@ -52,15 +51,8 @@
         <h3 class="text-muted">The Open City Toolkit</h3>
       </div>
 
-      <!--
-      <div class="jumbotron">
-        <h1>Jumbotron heading</h1>
-        <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-        <p><a class="btn btn-lg btn-success" href="#" role="button">Sign up today</a></p>
-      </div> -->
-
       <?php
-        include 'get_url.php';
+        include 'php/get_url.php';
         $online = '<span style="color:green">ONLINE</span>';
         $offline = '<span style="color:red">OFFLINE</span>';
         $run = '<span style="color:green">RUNNING</span>';
@@ -159,11 +151,6 @@
           <a href="https://github.com/geo-c/Open-City-Toolkit"><i class="fa fa-github-square fa-2x"></i></a>
           <a href="https://twitter.com/geoc_eu"><i class="fa fa-twitter-square fa-2x"></i></a>
           <a href="https://www.facebook.com/geo.c.opencities"><i class="fa fa-facebook-square fa-2x"></i></a>
-          <!--<span>
-            <a href="http://giv-oct.uni-muenster.de:5000/"><i class="fa fa-square fa-2x"></i></a>
-            <a href="http://giv-oct.uni-muenster.de:5000/"><img src="http://giv-oct.uni-muenster.de/oct/images/ckan-logo-footer.png" width="22px" height="auto" style="float:right; padding-top: 5px; padding-left: 5px;"></a>
-          </span>-->
-
           <span style="position: relative; right: 0; top: 0;">
             <a href="http://giv-oct.uni-muenster.de:5000/">
               <i class="fa fa-square fa-2x" style="position: relative; top: 0; left: 0;"></i>
@@ -173,10 +160,9 @@
             </a>
           </span>
         </div>
-        <!--<img src="../oct/images/logo-geoc.png">-->
       </center></footer>
 
-    </div> <!-- /container -->
+    </div> 
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <!-- <script src="assets/js/ie10-viewport-bug-workaround.js"></script> -->
@@ -196,10 +182,7 @@
 
     $(function() {
       var hash = window.location.hash;
-      // do some validation on the hash here
-      //if(hash=="severs" || hash=="resources"){
         $('#pills a[href="'+hash+'"]').tab('show');
-      //}
     });
   </script>
 
