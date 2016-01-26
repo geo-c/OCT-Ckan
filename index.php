@@ -45,6 +45,7 @@
           <ul class="nav nav-pills pull-right" id="pills">
             <li class="active"><a role="tab" data-toggle="tab" href="#servers">Servers</a></li>
             <li id="resources-tab"><a role="tab" data-toggle="tab" href="#resources">Resources</a></li>
+	    <li id="help-tab"><a role="tab" style="cursor:no-drop;">Help</a></li>
           </ul>
 
         </nav> 
@@ -173,7 +174,7 @@
   <script src="js/Querier.js"></script>
   <script>
     initParser();
-    query("http://giv-oct.uni-muenster.de:5000");
+    query("http://giv-oct.uni-muenster.de:5000","results");
   </script>
   <script>
     if( '<?php echo $ckanOCT; ?>' == '<span style="color:red">NOT RUNNING</span>')
