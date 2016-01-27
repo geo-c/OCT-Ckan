@@ -4,7 +4,7 @@
 - empower citizens to participate in and shape the future of their cities; 
 - deliver services based on open data that are useful for citizens, businesses and governing bodies alike.
 
-This repository contains code of the different components of the OCT. Tools to improve transparency, examples of open source city apps, open data and city services, interactive guidelines on how to realize a smart city, as well as specifications to link the different resources
+This repository contains code of the different components of the OCT. Tools to improve transparency, examples of open source city apps, open data and city services, interactive guidelines on how to realize an open city, as well as specifications to link the different resources
 of the OCT (apps, services, datasets, and guidelines) are gradually been added to it.
 
 The code is redistributed under the Apache v2 license. 
