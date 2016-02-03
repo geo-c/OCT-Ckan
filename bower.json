@@ -1,0 +1,26 @@
+{
+  "name": "Open-City-Toolkit",
+  "homepage": "http://giv-oct.uni-muenster.de/oct",
+  "authors": [
+    "Nicholas Schiestel <n.schiestel@uni-muenster.de>",
+    "Samuel Navas <samuel.navas@um.es>"
+  ],
+  "description": "Open-City-Toolkit",
+  "main": "",
+  "moduleType": [],
+  "keywords": [
+    "geo-c",
+    "smart",
+    "city",
+    "open",
+    "toolkit"
+  ],
+  "license": "Apache V2",
+  "private": true,
+  "dependencies": {
+    "jquery": "^2.2.0",
+    "bootstrap": "^3.3.6",
+    "highlightjs": "^9.1.0",
+    "font-awesome": "fontawesome#^4.5.0"
+  }
+}
