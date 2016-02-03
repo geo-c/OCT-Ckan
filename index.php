@@ -6,19 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="Samuel Navas Medrano">
+    <meta name="author" content="Nicholas Schiestel">
+
     <link rel="icon" href="favicon.ico">
 
     <title>Geo-C</title>
 
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css">
     <!-- Custom styles for this template -->
-    <link href="css/jumbotron-narrow.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="css/styles.css">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-
-
+    <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.min.css">
+    <!-- jQuery -->
+    <script src="lib/jquery/dist/jquery.min.js"></script>
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -36,11 +39,6 @@
     <div class="container">
       <div class="header clearfix">
         <nav>
-        <!--
-          <ul class="nav nav-pills pull-right">
-            <li role="presentation" class="active"><a href="#">Servers</a></li>
-            <li role="presentation"><a href="http://giv-oct.uni-muenster.de:5000">Dataset</a></li>
-          </ul> -->
 
           <ul class="nav nav-pills pull-right" id="pills">
             <li class="active"><a role="tab" data-toggle="tab" href="#servers">Servers</a></li>
@@ -167,9 +165,10 @@
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <!-- <script src="assets/js/ie10-viewport-bug-workaround.js"></script> -->
-  
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+  <!-- Bootstrap -->
+  <script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+  <!-- Custom JS -->
   <script src="js/Parser.js"></script>
   <script src="js/Querier.js"></script>
   <script>
