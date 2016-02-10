@@ -6,7 +6,6 @@ Server Status Module provides a serie of scripts to request information about th
 ## Requirements
 - A Linux-based OS
 - An HTTP server runing PHP
-- 
 
 ## Installation
 
@@ -36,7 +35,8 @@ $ ./ install.sh -h
 
 ## FAQ's
 
-** I have moved the Module, what do I have to modify in the crontab file? **
+**_I have moved the Module, what do I have to modify in the crontab file?_** 
+
 You will have to change the paths of the *uptime.sh* and *checkstatus.sh* files using **crontab -e**. Example:
 ```
 "59 23 * * * /home/user/geo-c/uptime.sh /var/www/html/geoc/" >> mycron
