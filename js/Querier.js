@@ -1,6 +1,6 @@
-      
+
       /*
-      * Start the querying process by getting the group list from the CKAN API 
+      * Start the querying process by getting the group list from the CKAN API
       * .
       * @param {String} uri - The URI of the ckan server
       * @param {String} divId - Id of the div where the results will be displayed
@@ -36,7 +36,7 @@
             // The group data will be displayed in a div named CKAN+GroupID
             var info = "<div class='col-lg-3' id='CKAN"+json.result.name+"'>";
             info+="<img src='"+json.result.image_url+"' style='width:25px;height:25px;float:left;'>";
-            info += "<h4 style=margin:5px;>"+json.result.display_name+"</h4> <b>User(s)</b>: "+json.result.users.length+"<ul>";
+            info += "&nbsp;&nbsp;<h4 style=margin:5px;>"+json.result.display_name+"</h4> <b>User(s)</b>: "+json.result.users.length+"<ul>";
             for (user in json.result.users){
               info+="<li>"+json.result.users[user].name+"</li>";
             }

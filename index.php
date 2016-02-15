@@ -12,8 +12,6 @@
 
     <title>Geo-C</title>
 
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-
     <!-- Bootstrap -->
     <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css">
     <!-- Custom styles for this template -->
@@ -46,14 +44,14 @@
 	    <li id="help-tab"><a role="tab" style="cursor:no-drop;">Help</a></li>
           </ul>
 
-        </nav> 
+        </nav>
         <h3 class="text-muted">The Open City Toolkit</h3>
       </div>
 
       <?php
         include 'php/get_url.php';
-        $online = '<span style="color:green">ONLINE</span>';
-        $offline = '<span style="color:red">OFFLINE</span>';
+        $online = '<span class="label label-success">ONLINE</span>';
+        $offline = '<span class="label label-danger">OFFLINE</span>';
         $run = '<span style="color:green">RUNNING</span>';
         $notrun = '<span style="color:red">NOT RUNNING</span>';
 
@@ -161,7 +159,7 @@
         </div>
       </center></footer>
 
-    </div> 
+    </div>
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <!-- <script src="assets/js/ie10-viewport-bug-workaround.js"></script> -->
@@ -188,6 +186,3 @@
 
   </body>
 </html>
-
-
-      
