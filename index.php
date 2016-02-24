@@ -45,7 +45,7 @@
                 <ul class="nav nav-pills pull-right" id="pills">
                     <li class="active"><a role="tab" data-toggle="tab" href="#servers">Servers</a></li>
                     <li id="resources-tab"><a role="tab" data-toggle="tab" href="#resources">Resources</a></li>
-                    <li><a href="/dev" target="_blank">Dev-Corner</a></li>
+                    <li><a href="/dev-corner" target="_blank">Dev-Corner</a></li>
                     <li><a role="tab" style="cursor:no-drop;">Help</a></li>
                 </ul>
 
@@ -94,7 +94,7 @@
             <!-- SERVERS TAB -->
             <div id="servers" class="tab-pane fade in active">
                 <div class="row marketing">
-                    <div class="col-lg-4">
+                    <div class="col-xs-4">
                         <h4>GIV-OCT</h4>
                         <p><i>giv-oct.uni-muenster.de</i></p>
                         <p><?=$statusOCT?></p> <a href="uptime2.log">Uptime log</a>
@@ -106,11 +106,10 @@
                             <li>Postgres: <?=$postOCT?></li>
                             <?php $ckanOCT = (!array_search('paster', $servicesOCT) ? $notrun : $run) ?>
                             <li>CKAN: <?=$ckanOCT?></li>
-                        </ul>
-                        <br>
+                        </ul><br>
                     </div>
 
-                    <div class="col-lg-4">
+                    <div class="col-xs-4">
                         <h4>GIV-LODUM</h4>
                         <p><i>giv-lodum.uni-muenster.de</i></p>
                         <p><?=$statusLOD?></p>
@@ -121,11 +120,10 @@
                             <li>Apache2: <?=$apacheLOD?></li>
                             <?php $postLOD = (!array_search('postgres', $servicesLOD) ? $notrun : $run) ?>
                             <li>Postgres: <?=$postLOD?></li>
-                        </ul>
-                        <br>
+                        </ul><br>
                     </div>
 
-                    <div class="col-lg-4">
+                    <div class="col-xs-4">
                         <h4>GIV-LODUMDATA</h4>
                         <p><i>giv-lodumdata.uni-muenster.de</i></p>
                         <p><?=$statusDAT?></p>
@@ -136,8 +134,7 @@
                             <li>Apache2: <?=$apacheDAT?></li>
                             <?php $postDAT = (!array_search('postgres', $servicesDAT) ? $notrun : $run) ?>
                             <li>Postgres: <?=$postDAT?></li>
-                        </ul>
-                        <br>
+                        </ul><br>
                     </div>
                 </div>
             </div>
@@ -156,7 +153,7 @@
 
         </div>
 
-        <footer class="footer">
+        <footer class="footer container">
             <center>
                 <a href="http://geo-c.eu/"><img src="http://giv-oct.uni-muenster.de/oct/images/logo-geoc.png" width="145px" height="auto" style="float:left;"></a>
                 <div align="right">
