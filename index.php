@@ -45,6 +45,7 @@
                 <ul class="nav nav-pills pull-right" id="pills">
                     <li class="active"><a role="tab" data-toggle="tab" href="#servers">Servers</a></li>
                     <li id="resources-tab"><a role="tab" data-toggle="tab" href="#resources">Resources</a></li>
+                    <li id="ckan-link"><a href="http://giv-oct.uni-muenster.de:5000">CKAN</a></li>
                     <li><a href="/dev-corner" target="_blank">Dev-Corner</a></li>
                     <li><a role="tab" style="cursor:no-drop;">Help</a></li>
                 </ul>
@@ -54,7 +55,7 @@
         </div>
 
       <?php
-        include 'get_url.php';
+        include 'php/get_url.php';
         $online = '<span style="color:green">ONLINE</span>';
         $offline = '<span style="color:red">OFFLINE</span>';
         $run = '<span style="color:green">RUNNING</span>';
@@ -184,21 +185,22 @@
     <script>
         initParser();
         query("http://giv-oct.uni-muenster.de:5000", "results");
-        </script>
+    </script>
 
     <script>
-        if( '<?php echo $ckanOCT; ?>' == '<span style="color:red">NOT RUNNING</span>')
+        if( '<?php echo $ckanOCT; ?>' == '<span style="color:red">NOT RUNNING</span>'){
             document.getElementById('resources-tab').innerHTML = '<a role="tab" style="cursor:no-drop;">Resources</a>';
-            console.log(document.getElementById('resources-tab'));
+            document.getElementById('ckan-link').innerHTML = '<a style="cursor:no-drop;" disabled>CKAN</a>';
+        }
 
-            $(function() {
-                var hash = window.location.hash;
-                // do some validation on the hash here
-                //if(hash=="severs" || hash=="resources"){
-                $('#pills a[href="'+hash+'"]').tab('show');
+        $(function() {
+            var hash = window.location.hash;
+            // do some validation on the hash here
+            //if(hash=="severs" || hash=="resources"){
+            $('#pills a[href="'+hash+'"]').tab('show');
                 //}
-            });
-        </script>
+        });
+    </script>
 
     </body>
 </html>
