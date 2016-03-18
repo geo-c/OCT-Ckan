@@ -11,14 +11,16 @@
 
     <title>GEO-C</title>
 
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css">
 
     <!-- Custom styles for this template -->
     <link href="css/jumbotron-narrow.css" rel="stylesheet">
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.min.css">
+
+    <!-- JQuery -->
+    <script src="lib/jquery/dist/jquery.min.js"></script>
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -46,7 +48,7 @@
                     <li class="active"><a role="tab" data-toggle="tab" href="#servers">Servers</a></li>
                     <li id="resources-tab"><a role="tab" data-toggle="tab" href="#resources">Resources</a></li>
                     <li id="ckan-link"><a href="http://giv-oct.uni-muenster.de:5000">CKAN</a></li>
-                    <li><a href="/dev-corner" target="_blank">Dev-Corner</a></li>
+                    <li><a href="/dev-corner">Dev-Corner</a></li>
                     <li><a role="tab" style="cursor:no-drop;">Help</a></li>
                 </ul>
 
@@ -177,8 +179,10 @@
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <!-- <script src="assets/js/ie10-viewport-bug-workaround.js"></script> -->
 
+    <!-- Bootstrap -->
+    <script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
 
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <!-- Custom JS -->
     <script src="js/Parser.js"></script>
     <script src="js/Querier.js"></script>
 
