@@ -1,11 +1,14 @@
 
+	var uri = "";
+
       /*
       * Start the querying process by getting the group list from the CKAN API
       * .
       * @param {String} uri - The URI of the ckan server
       * @param {String} divId - Id of the div where the results will be displayed
       */
-      function query(uri, divId){
+      function query(_uri, divId){
+	uri = _uri;
         var url = uri+"/api/3/action/group_list";
         $.ajax({
           url:url,
