@@ -59,8 +59,8 @@
 
       <?php
         include 'php/get_url.php';
-        $online = '<span style="color:green">ONLINE</span>';
-        $offline = '<span style="color:red">OFFLINE</span>';
+        $online = '<span class="label label-success">ONLINE</span>';
+        $offline = '<span class="label label-danger">OFFLINE</span>';
         $run = '<span style="color:green">RUNNING</span>';
         $notrun = '<span style="color:red">NOT RUNNING</span>';
 
