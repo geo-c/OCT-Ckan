@@ -48,8 +48,8 @@
                 <ul class="nav nav-pills pull-right" id="pills">
                     <li class="active"><a role="tab" data-toggle="tab" href="#servers">Servers</a></li>
                     <li id="resources-tab"><a role="tab" data-toggle="tab" href="#resources">Resources</a></li>
-                    <li id="ckan-link"><a href="http://giv-oct.uni-muenster.de:5000">CKAN</a></li>
-                    <li><a href="/dev-corner">Dev-Corner</a></li>
+                    <li id="ckan-link"><a href="http://giv-oct.uni-muenster.de:5000" target="_blank">CKAN</a></li>
+                    <li><a href="/dev-corner" target="_blank">Dev-Corner</a></li>
                     <li><a role="tab" style="cursor:no-drop;">Help</a></li>
                 </ul>
 
