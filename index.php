@@ -100,7 +100,7 @@
                 <div class="row marketing">
                     <div class="col-xs-4">
                         <h4>GIV-OCT</h4>
-                        <p><i>giv-oct.uni-muenster.de!</i></p>
+                        <p><i>giv-oct.uni-muenster.de</i></p>
                         <p><?=$statusOCT?></p> <a href="uptime2.log">Uptime log</a>
                         <h4>Services:</h4>
                         <ul style="list-style-type:square">
