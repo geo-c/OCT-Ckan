@@ -72,7 +72,6 @@
         if(@fsockopen ('giv-lodumdata.uni-muenster.de', 80, $errno, $errstr, 10)){
           $statusLOD = $online;
           $request_url =  'http://giv-lodum.uni-muenster.de/servicesPOST.php';
-          //$request_url = "http://128.176.146.99/servicesPOST.php";
           $servicesLOD = array("apache2","postgres");
           $servicesLOD = json_decode(curl_post($request_url,$servicesLOD));
           array_unshift($servicesLOD,"avoid first element with index = 0");
@@ -84,7 +83,6 @@
         if(@fsockopen ('giv-lodumdata.uni-muenster.de', 80, $errno, $errstr, 10)){
           $statusDAT = $online;
           $request_url =  'http://giv-lodumdata.uni-muenster.de/servicesPOST.php';
-          //$request_url = "http://128.176.147.2/servicesPOST.php";
           $servicesDAT = array("apache2","postgres");
           $servicesDAT = json_decode(curl_post($request_url,$servicesDAT));
           array_unshift($servicesDAT,"avoid first element with index = 0");
