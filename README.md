@@ -2,6 +2,8 @@
 
 ## Description
 
+![Image CKAN GEO-C](/images/OpenCityToolkit.jpg)
+
 [The Open City Toolkit] (http://giv-oct.uni-muenster.de:5000/) (OCT) is a a collection of tools, processes, specifications and guidelines to: 
 - empower citizens to participate in and shape the future of their cities; 
 - deliver services based on open data that are useful for citizens, businesses and governing bodies alike.
